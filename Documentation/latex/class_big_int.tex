@@ -1,0 +1,649 @@
+\hypertarget{class_big_int}{}\section{Big\+Int Class Reference}
+\label{class_big_int}\index{Big\+Int@{Big\+Int}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{Big\+Int} ()
+\item 
+\hyperlink{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}{Big\+Int} (string val)
+\item 
+\hyperlink{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}{Big\+Int} (const \hyperlink{class_big_int}{Big\+Int} \&other)
+\item 
+\hyperlink{class_big_int_a2a8ffad37329b0a3649b88180406d12c}{$\sim$\+Big\+Int} ()
+\item 
+short $\ast$ \hyperlink{class_big_int_a380fe234cd3ea95706affc020b2493a4}{get\+Data} () const 
+\item 
+int \hyperlink{class_big_int_acf4f158035d5001cd102fc0b14b5d22d}{get\+Digits} () const 
+\item 
+bool \hyperlink{class_big_int_a4e870e916d8b09c0ad62cfa7f2ba8de0}{get\+Is\+Positive} () const 
+\item 
+void \hyperlink{class_big_int_a6bb113748317085a1c8e111fadeec13e}{set\+Is\+Positive} (bool b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \& \hyperlink{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}{operator=} (const \hyperlink{class_big_int}{Big\+Int} \&other)
+\item 
+short \& \hyperlink{class_big_int_acb6c7b1b053887bff5673f9cbd5833a6}{operator\mbox{[}$\,$\mbox{]}} (const short index)
+\item 
+const short \& \hyperlink{class_big_int_a5483010354528bf73d933cd36c5da11b}{operator\mbox{[}$\,$\mbox{]}} (const short index) const 
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a56350bc8395ed38c2afdbb4554e56b1f}{operator-\/} () const 
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a6aca3cff26d5c67d4189139b95b53e32}{operator+} () const 
+\item 
+\hyperlink{class_big_int}{Big\+Int} \& \hyperlink{class_big_int_a0f1a8a43867f25c8df48e7747012536f}{operator++} ()
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a7120696c07c413340246a61eb209a541}{operator++} (int)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \& \hyperlink{class_big_int_aed992537fac59f8c794fc24d10baf199}{operator-\/-\/} ()
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663}{operator-\/-\/} (int)
+\item 
+string \hyperlink{class_big_int_a947ea3d85937c212c75f58da26e41d00}{to\+String} () const 
+\item 
+int \hyperlink{class_big_int_a8c5832ca4c93be36a01a0683ed9b9d87}{to\+Int} () const 
+\item 
+long long \hyperlink{class_big_int_a1a6a8a6deeda3f57b27566027e3c2d4d}{to\+Long} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_big_int_a061d5ed012a04d6646c9a6a0e10da544}{add\+One} ()
+\item 
+void \hyperlink{class_big_int_a4baef860c6adb34f670a868db7fc4482}{subtract\+One} ()
+\item 
+void \hyperlink{class_big_int_a2881bf9fd6f9310cef0853036d89f8a1}{copy} (const \hyperlink{class_big_int}{Big\+Int} \&other)
+\item 
+void \hyperlink{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}{set\+Big\+Int} (string val)
+\item 
+void \hyperlink{class_big_int_a4d6ffd94b538c45fa3c4c02e625ba7b7}{resize} ()
+\item 
+void \hyperlink{class_big_int_a292c19c73cf1198bfb3f64ca093651d2}{trim} ()
+\item 
+bool \hyperlink{class_big_int_a0963adebab02961555382704df42d708}{is\+Larger} (const \hyperlink{class_big_int}{Big\+Int} \&b) const 
+\item 
+bool \hyperlink{class_big_int_a5429df4fc70cb4f4af675d4d64280f71}{is\+Equal} (const \hyperlink{class_big_int}{Big\+Int} \&b) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short $\ast$ \hyperlink{class_big_int_af181978224e5a90c5dbd4cbcd3d80379}{data}
+\item 
+unsigned int \hyperlink{class_big_int_ae040004d15aa6792d2ee62e0aeabb24b}{digits}
+\item 
+bool \hyperlink{class_big_int_aff7539a3ecc2cbc8ab3117ed40f4352c}{is\+Positive}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a99b2d896b393bf61492d6a8679053240}{operator+} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a49094568be86f407d234fcc6f00b184c}{operator+} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a9411c77fc375b6dc692dbb62972dd99e}{operator+} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a83e7a63b3c5d80f2e8941ee13130bf4b}{operator-\/} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a38fdaadd250b30d28e277fd5adde2e02}{operator-\/} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a06ce9642ecefa2aceecd4b116ba3eb21}{operator-\/} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_ad7b8aa42fc035e14b788ecf3ce2bcd75}{operator$\ast$} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a9e33d5e6cccf7d66e8d32f022b94b3dc}{operator$\ast$} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_ad35e3c825312ccddbed451256f43d4a9}{operator$\ast$} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a4f32efafa21a72217064fce4f1b050b3}{operator/} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_ae879f205898eae6cf31b4f565f5a5ec1}{operator/} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_abd3776fc592b78cb26812dfebf9b0a87}{operator/} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a463be2d085983a0ba8a0cc5be32c5f96}{operator\%} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a628feeac6b244f8107518fb8ba6f379c}{operator\%} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \hyperlink{class_big_int_a071c38790554cbfc14e58e4ebd56c702}{operator\%} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+ostream \& \hyperlink{class_big_int_acba0569c5cb9dc9af2d27f65ce48daf8}{operator$<$$<$} (ostream \&out, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+istream \& \hyperlink{class_big_int_abe387e8cc08c8919c29e7573a74559f2}{operator$>$$>$} (istream \&in, \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_af6b14de2bba24c0478b7efa932190d01}{operator$<$} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_a5f4e22a269f15452a8f4a859f3f59429}{operator$<$} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_a603f5f6ed78dfb744b36838ef8036367}{operator$<$} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_ad57ab1ea41721d4e2f6c6450db9ebbba}{operator$<$=} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_a52513cceb8fd5c4ff3920081c550e825}{operator$<$=} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_ab26e0eb90a3cfc88a946898d98d8eb9c}{operator$<$=} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_a983eaea8ba326a099f99bce4c549e88b}{operator$>$} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_a7cfb997360d9048effea030a384d1a36}{operator$>$} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_add42067da9b90d99aa447ba53f692a89}{operator$>$} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_a6253054c5127ed3304f637c952bffacd}{operator$>$=} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_ab7841b8b5f6ecedb7ee0dc58a4f97511}{operator$>$=} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_ac98b40639896d4fde454e5297883f915}{operator$>$=} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_a9965b82607faf4a2d27e53911f43773f}{operator==} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_a5b3f710ea2ac3c06f9f14e2171630afe}{operator==} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_a1079744c0759d3a798059486640ae0af}{operator==} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\item 
+bool \hyperlink{class_big_int_ad8b84069166f6688a3d8d76d9ec20c6d}{operator!=} (const \hyperlink{class_big_int}{Big\+Int} \&a, const \hyperlink{class_big_int}{Big\+Int} \&b)
+\item 
+bool \hyperlink{class_big_int_a996220a32a59c19000f3dac78c2edd31}{operator!=} (const \hyperlink{class_big_int}{Big\+Int} \&a, long long num)
+\item 
+bool \hyperlink{class_big_int_ac1bc6e9585c3d90ac028eb0ed5a8f705}{operator!=} (long long num, const \hyperlink{class_big_int}{Big\+Int} \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{Big\+Int()}{BigInt()}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::\+Big\+Int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_af677021c0987fc2a48da06837ed29c58}{}\label{class_big_int_af677021c0987fc2a48da06837ed29c58}
+default constructor builds a \hyperlink{class_big_int}{Big\+Int} that has a size of one and a value of 0 \index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{Big\+Int(string val)}{BigInt(string val)}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::\+Big\+Int (
+\begin{DoxyParamCaption}
+\item[{string}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}{}\label{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}
+builds a \hyperlink{class_big_int}{Big\+Int} given a string of the number, number can be signed eg) +45, -\/45, or left blank eg) 45 \index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{Big\+Int(const Big\+Int \&other)}{BigInt(const BigInt &other)}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::\+Big\+Int (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}{}\label{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}
+copy constructor \index{Big\+Int@{Big\+Int}!````~Big\+Int@{$\sim$\+Big\+Int}}
+\index{````~Big\+Int@{$\sim$\+Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{$\sim$\+Big\+Int()}{~BigInt()}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::$\sim$\+Big\+Int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a2a8ffad37329b0a3649b88180406d12c}{}\label{class_big_int_a2a8ffad37329b0a3649b88180406d12c}
+destructor for dynamically allocated memory 
+
+\subsection{Member Function Documentation}
+\index{Big\+Int@{Big\+Int}!add\+One@{add\+One}}
+\index{add\+One@{add\+One}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{add\+One()}{addOne()}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::add\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a061d5ed012a04d6646c9a6a0e10da544}{}\label{class_big_int_a061d5ed012a04d6646c9a6a0e10da544}
+adds 1 to the \hyperlink{class_big_int}{Big\+Int} directly \index{Big\+Int@{Big\+Int}!copy@{copy}}
+\index{copy@{copy}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{copy(const Big\+Int \&other)}{copy(const BigInt &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a2881bf9fd6f9310cef0853036d89f8a1}{}\label{class_big_int_a2881bf9fd6f9310cef0853036d89f8a1}
+deep copies \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{get\+Data() const }{getData() const }}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ Big\+Int\+::get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_big_int_a380fe234cd3ea95706affc020b2493a4}{}\label{class_big_int_a380fe234cd3ea95706affc020b2493a4}
+retrieves the pointer that holds the array of digits \index{Big\+Int@{Big\+Int}!get\+Digits@{get\+Digits}}
+\index{get\+Digits@{get\+Digits}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{get\+Digits() const }{getDigits() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Big\+Int\+::get\+Digits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_big_int_acf4f158035d5001cd102fc0b14b5d22d}{}\label{class_big_int_acf4f158035d5001cd102fc0b14b5d22d}
+retrieves the number of digits in the \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!get\+Is\+Positive@{get\+Is\+Positive}}
+\index{get\+Is\+Positive@{get\+Is\+Positive}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{get\+Is\+Positive() const }{getIsPositive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Big\+Int\+::get\+Is\+Positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_big_int_a4e870e916d8b09c0ad62cfa7f2ba8de0}{}\label{class_big_int_a4e870e916d8b09c0ad62cfa7f2ba8de0}
+retrieves a bool value that is true if the number is positive or 0 and false if negative \index{Big\+Int@{Big\+Int}!is\+Equal@{is\+Equal}}
+\index{is\+Equal@{is\+Equal}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{is\+Equal(const Big\+Int \&b) const }{isEqual(const BigInt &b) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Big\+Int\+::is\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a5429df4fc70cb4f4af675d4d64280f71}{}\label{class_big_int_a5429df4fc70cb4f4af675d4d64280f71}
+true if this object is the same exact number as b including signs \index{Big\+Int@{Big\+Int}!is\+Larger@{is\+Larger}}
+\index{is\+Larger@{is\+Larger}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{is\+Larger(const Big\+Int \&b) const }{isLarger(const BigInt &b) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Big\+Int\+::is\+Larger (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a0963adebab02961555382704df42d708}{}\label{class_big_int_a0963adebab02961555382704df42d708}
+true if this object is larger than b, should be called when both have the same number of digits but one is larger \index{Big\+Int@{Big\+Int}!operator+@{operator+}}
+\index{operator+@{operator+}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator+() const }{operator+() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} Big\+Int\+::operator+ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a6aca3cff26d5c67d4189139b95b53e32}{}\label{class_big_int_a6aca3cff26d5c67d4189139b95b53e32}
+returns a positive \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator++@{operator++}}
+\index{operator++@{operator++}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator++()}{operator++()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} \& Big\+Int\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a0f1a8a43867f25c8df48e7747012536f}{}\label{class_big_int_a0f1a8a43867f25c8df48e7747012536f}
+prefix operator that adds 1 to the \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator++@{operator++}}
+\index{operator++@{operator++}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator++(int)}{operator++(int)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} Big\+Int\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a7120696c07c413340246a61eb209a541}{}\label{class_big_int_a7120696c07c413340246a61eb209a541}
+postfix operator that adds 1 to the \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/() const }{operator-() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} Big\+Int\+::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a56350bc8395ed38c2afdbb4554e56b1f}{}\label{class_big_int_a56350bc8395ed38c2afdbb4554e56b1f}
+returns -\/\+Big\+Int \index{Big\+Int@{Big\+Int}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/-\/()}{operator--()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} \& Big\+Int\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_aed992537fac59f8c794fc24d10baf199}{}\label{class_big_int_aed992537fac59f8c794fc24d10baf199}
+prefix operator that subtracts 1 from the \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/-\/(int)}{operator--(int)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} Big\+Int\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663}{}\label{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663}
+postfix operator that subtracts 1 from the \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator=@{operator=}}
+\index{operator=@{operator=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator=(const Big\+Int \&other)}{operator=(const BigInt &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} \& Big\+Int\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}{}\label{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}
+overloaded assignment operator \index{Big\+Int@{Big\+Int}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator[](const short index)}{operator[](const short index)}}]{\setlength{\rightskip}{0pt plus 5cm}short \& Big\+Int\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const short}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_acb6c7b1b053887bff5673f9cbd5833a6}{}\label{class_big_int_acb6c7b1b053887bff5673f9cbd5833a6}
+access and modification of specific digits in \hyperlink{class_big_int}{Big\+Int}, checks to see if index is in range if not then throws out\+\_\+of\+\_\+range exception \index{Big\+Int@{Big\+Int}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator[](const short index) const }{operator[](const short index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const short \& Big\+Int\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const short}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a5483010354528bf73d933cd36c5da11b}{}\label{class_big_int_a5483010354528bf73d933cd36c5da11b}
+access of specific digits in \hyperlink{class_big_int}{Big\+Int}, checks to see if index is in range if not then throws out\+\_\+of\+\_\+range exception \index{Big\+Int@{Big\+Int}!resize@{resize}}
+\index{resize@{resize}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{resize()}{resize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a4d6ffd94b538c45fa3c4c02e625ba7b7}{}\label{class_big_int_a4d6ffd94b538c45fa3c4c02e625ba7b7}
+increases the array size by 1 and makes new digit = 1 \index{Big\+Int@{Big\+Int}!set\+Big\+Int@{set\+Big\+Int}}
+\index{set\+Big\+Int@{set\+Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{set\+Big\+Int(string val)}{setBigInt(string val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::set\+Big\+Int (
+\begin{DoxyParamCaption}
+\item[{string}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}{}\label{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}
+performs check on string parameter then creates a \hyperlink{class_big_int}{Big\+Int} with that value; throws invalid\+\_\+argument exception if string is not valid \index{Big\+Int@{Big\+Int}!set\+Is\+Positive@{set\+Is\+Positive}}
+\index{set\+Is\+Positive@{set\+Is\+Positive}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{set\+Is\+Positive(bool b)}{setIsPositive(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::set\+Is\+Positive (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_a6bb113748317085a1c8e111fadeec13e}{}\label{class_big_int_a6bb113748317085a1c8e111fadeec13e}
+sets the sign of the \hyperlink{class_big_int}{Big\+Int}, if true then positive (for values of 0 this will default to true/positive regardless of passed parameter) else false then negative \index{Big\+Int@{Big\+Int}!subtract\+One@{subtract\+One}}
+\index{subtract\+One@{subtract\+One}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{subtract\+One()}{subtractOne()}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::subtract\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a4baef860c6adb34f670a868db7fc4482}{}\label{class_big_int_a4baef860c6adb34f670a868db7fc4482}
+subtracts 1 from the \hyperlink{class_big_int}{Big\+Int} directly \index{Big\+Int@{Big\+Int}!to\+Int@{to\+Int}}
+\index{to\+Int@{to\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{to\+Int() const }{toInt() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Big\+Int\+::to\+Int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a8c5832ca4c93be36a01a0683ed9b9d87}{}\label{class_big_int_a8c5832ca4c93be36a01a0683ed9b9d87}
+converts the stored number to an int, will overflow if number is too large \index{Big\+Int@{Big\+Int}!to\+Long@{to\+Long}}
+\index{to\+Long@{to\+Long}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{to\+Long() const }{toLong() const }}]{\setlength{\rightskip}{0pt plus 5cm}long long Big\+Int\+::to\+Long (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a1a6a8a6deeda3f57b27566027e3c2d4d}{}\label{class_big_int_a1a6a8a6deeda3f57b27566027e3c2d4d}
+converts the stored number to a long long, will overflow if number is too large \index{Big\+Int@{Big\+Int}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Big\+Int\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_big_int_a947ea3d85937c212c75f58da26e41d00}{}\label{class_big_int_a947ea3d85937c212c75f58da26e41d00}
+converts the stored number to a string \index{Big\+Int@{Big\+Int}!trim@{trim}}
+\index{trim@{trim}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{trim()}{trim()}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::trim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a292c19c73cf1198bfb3f64ca093651d2}{}\label{class_big_int_a292c19c73cf1198bfb3f64ca093651d2}
+removes non significant 0s 
+
+\subsection{Friends And Related Function Documentation}
+\index{Big\+Int@{Big\+Int}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ad8b84069166f6688a3d8d76d9ec20c6d}{}\label{class_big_int_ad8b84069166f6688a3d8d76d9ec20c6d}
+returns \hyperlink{class_big_int}{Big\+Int} != \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a996220a32a59c19000f3dac78c2edd31}{}\label{class_big_int_a996220a32a59c19000f3dac78c2edd31}
+returns \hyperlink{class_big_int}{Big\+Int} != long long \index{Big\+Int@{Big\+Int}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator"!=}{operator!=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ac1bc6e9585c3d90ac028eb0ed5a8f705}{}\label{class_big_int_ac1bc6e9585c3d90ac028eb0ed5a8f705}
+returns long long != \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator\%}{operator%}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator\% (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a463be2d085983a0ba8a0cc5be32c5f96}{}\label{class_big_int_a463be2d085983a0ba8a0cc5be32c5f96}
+modulus\+: \hyperlink{class_big_int}{Big\+Int} \% \hyperlink{class_big_int}{Big\+Int} (N\+O\+TE\+: works with negative numbers) \index{Big\+Int@{Big\+Int}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator\%}{operator%}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator\% (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a628feeac6b244f8107518fb8ba6f379c}{}\label{class_big_int_a628feeac6b244f8107518fb8ba6f379c}
+modulus\+: \hyperlink{class_big_int}{Big\+Int} \% long long (N\+O\+TE\+: works with negative numbers) \index{Big\+Int@{Big\+Int}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator\%}{operator%}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator\% (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a071c38790554cbfc14e58e4ebd56c702}{}\label{class_big_int_a071c38790554cbfc14e58e4ebd56c702}
+modulus\+: long long \% \hyperlink{class_big_int}{Big\+Int} (N\+O\+TE\+: works with negative numbers) \index{Big\+Int@{Big\+Int}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ad7b8aa42fc035e14b788ecf3ce2bcd75}{}\label{class_big_int_ad7b8aa42fc035e14b788ecf3ce2bcd75}
+multiplication\+: \hyperlink{class_big_int}{Big\+Int} $\ast$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a9e33d5e6cccf7d66e8d32f022b94b3dc}{}\label{class_big_int_a9e33d5e6cccf7d66e8d32f022b94b3dc}
+multiplication\+: \hyperlink{class_big_int}{Big\+Int} $\ast$ long long \index{Big\+Int@{Big\+Int}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$\ast$}{operator*}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ad35e3c825312ccddbed451256f43d4a9}{}\label{class_big_int_ad35e3c825312ccddbed451256f43d4a9}
+multiplication\+: long long $\ast$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator+@{operator+}}
+\index{operator+@{operator+}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a99b2d896b393bf61492d6a8679053240}{}\label{class_big_int_a99b2d896b393bf61492d6a8679053240}
+addition\+: \hyperlink{class_big_int}{Big\+Int} + \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator+@{operator+}}
+\index{operator+@{operator+}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a49094568be86f407d234fcc6f00b184c}{}\label{class_big_int_a49094568be86f407d234fcc6f00b184c}
+addition\+: \hyperlink{class_big_int}{Big\+Int} + long long \index{Big\+Int@{Big\+Int}!operator+@{operator+}}
+\index{operator+@{operator+}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator+}{operator+}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator+ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a9411c77fc375b6dc692dbb62972dd99e}{}\label{class_big_int_a9411c77fc375b6dc692dbb62972dd99e}
+addition\+: long long + \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a83e7a63b3c5d80f2e8941ee13130bf4b}{}\label{class_big_int_a83e7a63b3c5d80f2e8941ee13130bf4b}
+subtraction\+: \hyperlink{class_big_int}{Big\+Int} -\/ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a38fdaadd250b30d28e277fd5adde2e02}{}\label{class_big_int_a38fdaadd250b30d28e277fd5adde2e02}
+subtraction\+: \hyperlink{class_big_int}{Big\+Int} -\/ long long \index{Big\+Int@{Big\+Int}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator-\/}{operator-}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a06ce9642ecefa2aceecd4b116ba3eb21}{}\label{class_big_int_a06ce9642ecefa2aceecd4b116ba3eb21}
+subtraction\+: long long -\/ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator/@{operator/}}
+\index{operator/@{operator/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator/}{operator/}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a4f32efafa21a72217064fce4f1b050b3}{}\label{class_big_int_a4f32efafa21a72217064fce4f1b050b3}
+division\+: \hyperlink{class_big_int}{Big\+Int} / \hyperlink{class_big_int}{Big\+Int} (N\+O\+TE\+: division is integer trunction) \index{Big\+Int@{Big\+Int}!operator/@{operator/}}
+\index{operator/@{operator/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator/}{operator/}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ae879f205898eae6cf31b4f565f5a5ec1}{}\label{class_big_int_ae879f205898eae6cf31b4f565f5a5ec1}
+division\+: \hyperlink{class_big_int}{Big\+Int} / long long (N\+O\+TE\+: division is integer trunction) \index{Big\+Int@{Big\+Int}!operator/@{operator/}}
+\index{operator/@{operator/}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator/}{operator/}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} operator/ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_abd3776fc592b78cb26812dfebf9b0a87}{}\label{class_big_int_abd3776fc592b78cb26812dfebf9b0a87}
+division\+: long long / \hyperlink{class_big_int}{Big\+Int} (N\+O\+TE\+: division is integer trunction) \index{Big\+Int@{Big\+Int}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$}{operator<}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_af6b14de2bba24c0478b7efa932190d01}{}\label{class_big_int_af6b14de2bba24c0478b7efa932190d01}
+returns \hyperlink{class_big_int}{Big\+Int} $<$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$}{operator<}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a5f4e22a269f15452a8f4a859f3f59429}{}\label{class_big_int_a5f4e22a269f15452a8f4a859f3f59429}
+returns \hyperlink{class_big_int}{Big\+Int} $<$ long long \index{Big\+Int@{Big\+Int}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$}{operator<}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a603f5f6ed78dfb744b36838ef8036367}{}\label{class_big_int_a603f5f6ed78dfb744b36838ef8036367}
+returns long long $<$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_acba0569c5cb9dc9af2d27f65ce48daf8}{}\label{class_big_int_acba0569c5cb9dc9af2d27f65ce48daf8}
+prints the \hyperlink{class_big_int}{Big\+Int} and its sign (even if positive) \index{Big\+Int@{Big\+Int}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$=}{operator<=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ad57ab1ea41721d4e2f6c6450db9ebbba}{}\label{class_big_int_ad57ab1ea41721d4e2f6c6450db9ebbba}
+returns \hyperlink{class_big_int}{Big\+Int} $<$= \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$=}{operator<=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a52513cceb8fd5c4ff3920081c550e825}{}\label{class_big_int_a52513cceb8fd5c4ff3920081c550e825}
+returns \hyperlink{class_big_int}{Big\+Int} $<$= long long \index{Big\+Int@{Big\+Int}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$<$=}{operator<=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ab26e0eb90a3cfc88a946898d98d8eb9c}{}\label{class_big_int_ab26e0eb90a3cfc88a946898d98d8eb9c}
+returns long long $<$= \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator==@{operator==}}
+\index{operator==@{operator==}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator==}{operator==}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a9965b82607faf4a2d27e53911f43773f}{}\label{class_big_int_a9965b82607faf4a2d27e53911f43773f}
+returns \hyperlink{class_big_int}{Big\+Int} == \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator==@{operator==}}
+\index{operator==@{operator==}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator==}{operator==}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a5b3f710ea2ac3c06f9f14e2171630afe}{}\label{class_big_int_a5b3f710ea2ac3c06f9f14e2171630afe}
+returns \hyperlink{class_big_int}{Big\+Int} == long long \index{Big\+Int@{Big\+Int}!operator==@{operator==}}
+\index{operator==@{operator==}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator==}{operator==}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a1079744c0759d3a798059486640ae0af}{}\label{class_big_int_a1079744c0759d3a798059486640ae0af}
+returns long long == \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$}{operator>}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a983eaea8ba326a099f99bce4c549e88b}{}\label{class_big_int_a983eaea8ba326a099f99bce4c549e88b}
+returns \hyperlink{class_big_int}{Big\+Int} $>$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$}{operator>}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a7cfb997360d9048effea030a384d1a36}{}\label{class_big_int_a7cfb997360d9048effea030a384d1a36}
+returns \hyperlink{class_big_int}{Big\+Int} $>$ long long \index{Big\+Int@{Big\+Int}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$}{operator>}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_add42067da9b90d99aa447ba53f692a89}{}\label{class_big_int_add42067da9b90d99aa447ba53f692a89}
+returns long long $>$ \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$=}{operator>=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{const {\bf Big\+Int} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_a6253054c5127ed3304f637c952bffacd}{}\label{class_big_int_a6253054c5127ed3304f637c952bffacd}
+returns \hyperlink{class_big_int}{Big\+Int} $>$= \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$=}{operator>=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Big\+Int} \&}]{a, }
+\item[{long long}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ab7841b8b5f6ecedb7ee0dc58a4f97511}{}\label{class_big_int_ab7841b8b5f6ecedb7ee0dc58a4f97511}
+returns \hyperlink{class_big_int}{Big\+Int} $>$= long long \index{Big\+Int@{Big\+Int}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$=}{operator>=}}]{\setlength{\rightskip}{0pt plus 5cm}bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{long long}]{num, }
+\item[{const {\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_ac98b40639896d4fde454e5297883f915}{}\label{class_big_int_ac98b40639896d4fde454e5297883f915}
+returns long long $>$= \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{in, }
+\item[{{\bf Big\+Int} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_big_int_abe387e8cc08c8919c29e7573a74559f2}{}\label{class_big_int_abe387e8cc08c8919c29e7573a74559f2}
+writes the user input to the \hyperlink{class_big_int}{Big\+Int}, provides input validition and throws an invalid\+\_\+argument exception upon failure 
+
+\subsection{Member Data Documentation}
+\index{Big\+Int@{Big\+Int}!data@{data}}
+\index{data@{data}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ Big\+Int\+::data\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_af181978224e5a90c5dbd4cbcd3d80379}{}\label{class_big_int_af181978224e5a90c5dbd4cbcd3d80379}
+store each digit in an array \index{Big\+Int@{Big\+Int}!digits@{digits}}
+\index{digits@{digits}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{digits}{digits}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Big\+Int\+::digits\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_ae040004d15aa6792d2ee62e0aeabb24b}{}\label{class_big_int_ae040004d15aa6792d2ee62e0aeabb24b}
+store the size of the num that this data type is holding \index{Big\+Int@{Big\+Int}!is\+Positive@{is\+Positive}}
+\index{is\+Positive@{is\+Positive}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{is\+Positive}{isPositive}}]{\setlength{\rightskip}{0pt plus 5cm}bool Big\+Int\+::is\+Positive\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_aff7539a3ecc2cbc8ab3117ed40f4352c}{}\label{class_big_int_aff7539a3ecc2cbc8ab3117ed40f4352c}
+store the sign of the number, 0 will always be positive 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Source Files/bigint.\+h\item 
+D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Source Files/bigint.\+cpp\end{DoxyCompactItemize}
