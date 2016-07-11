@@ -64,6 +64,6 @@ var class_big_int =
     [ "operator>=", "class_big_int.html#ac98b40639896d4fde454e5297883f915", null ],
     [ "operator>>", "class_big_int.html#abe387e8cc08c8919c29e7573a74559f2", null ],
     [ "data", "class_big_int.html#af181978224e5a90c5dbd4cbcd3d80379", null ],
-    [ "digits", "class_big_int.html#ae040004d15aa6792d2ee62e0aeabb24b", null ],
+    [ "digits", "class_big_int.html#a19085d2456cc9b7b79b9ff15b63a2588", null ],
     [ "isPositive", "class_big_int.html#aff7539a3ecc2cbc8ab3117ed40f4352c", null ]
 ];

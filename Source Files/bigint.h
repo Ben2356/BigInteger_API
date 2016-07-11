@@ -28,7 +28,7 @@ private:
 
 	/**store the size of the num that this data type is holding
 	*/
-	unsigned int digits;
+	int digits;
 
 	/**store the sign of the number, 0 will always be positive
 	*/
