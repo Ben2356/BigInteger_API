@@ -1,6 +1,6 @@
 /**
 	AUTHOR: Benjamin Moreno
-	LAST MODIFIED: 7/11/16
+	LAST MODIFIED: 8/5/16
 */
 
 #pragma once
@@ -10,6 +10,13 @@
 #include <string>
 #include <stdexcept>
 using namespace std;
+
+/*TODO:
+	- optimization
+	- add ability to reassign a BigInt
+	- add ability to assign an short/int/long to a BigInt on creation
+	- fix potential memory leak with assignment operator
+*/
 
 //new design of BigInt could use traditional unsigned long longs and fill up each letting overflows have new unsigned long
 //longs and storing all the overflows in a vector/array => would allow for the system to handle numbers more "natively"
@@ -46,10 +53,18 @@ private:
 	*/
 	void copy(const BigInt &other);
 
+	/**deletes dynamically allocated memory and sets data to a null pointer
+	*/
+	void clear();
+
 	/**performs check on string parameter then creates a BigInt with that value; throws invalid_argument exception if string 
 	is not valid
 	*/
 	void setBigInt(string val);
+
+	/**overloaded version of setBigInt that works with long long parameters
+	*/
+	void setBigInt(long long val);
 
 	/**increases the array size by 1 and makes new digit = 1
 	*/
@@ -76,6 +91,10 @@ public:
 	/**builds a BigInt given a string of the number, number can be signed eg) +45, -45, or left blank eg) 45
 	*/
 	BigInt(string val);
+
+	/**creates a BigInt from a long long
+	*/
+	BigInt(long long val);
 	
 	/**copy constructor
 	*/
@@ -102,9 +121,13 @@ public:
 	*/
 	void setIsPositive(bool b);
 
-	/**overloaded assignment operator
+	/**assignment operator: BigInt = BigInt
 	*/
 	BigInt& operator=(const BigInt &other);
+
+	/**assignment operator: BigInt = long long
+	*/
+	BigInt& operator=(const long long num);
 	
 	/**addition: BigInt + BigInt
 	*/

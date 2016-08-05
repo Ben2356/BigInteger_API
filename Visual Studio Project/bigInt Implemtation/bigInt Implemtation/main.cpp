@@ -41,6 +41,15 @@ int main()
 	cout << test.toInt() << endl;
 	cout << test2.toInt() << endl;*/
 
+	BigInt test(154);
+	BigInt test2(4871);
+	cout << test << endl;
+	cout << test2 << endl;
+	test = test2;
+	cout << test << endl;
+	test = 35;
+	cout << test << endl;
+
 	cin.clear();
 	cin.ignore();
 	cin.get();

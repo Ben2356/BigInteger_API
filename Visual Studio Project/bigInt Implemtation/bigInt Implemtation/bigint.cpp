@@ -1,6 +1,6 @@
 /**
 	AUTHOR: Benjamin Moreno
-	LAST MODIFIED: 7/9/16
+	LAST MODIFIED: 8/5/16
 */
 #include <iostream>
 #include <string>
@@ -82,6 +82,12 @@ void BigInt::copy(const BigInt &other)
 	}
 }
 
+void BigInt::clear()
+{
+	delete[] data;
+	data = 0;
+}
+
 void BigInt::subtractOne()
 {
 	if (data[digits - 1] == 0)
@@ -133,6 +139,35 @@ void BigInt::setBigInt(string val)
 				isPositive = true;
 		}
 		data[digitIndex++] = val[i] - '0';
+	}
+}
+
+void BigInt::setBigInt(long long val)
+{
+	if (val == 0)
+	{
+		data = new short[1];
+		data[0] = 0;
+		isPositive = true;
+		digits = 1;
+	}
+	else
+	{
+		string tmp = to_string(val);
+		int i = 0;
+		if (tmp[0] == '-')
+		{
+			isPositive = false;
+			i = 1;
+		}
+		else
+			isPositive = true;
+		digits = tmp.size() - i;
+		data = new short[digits];
+		for (int index = 0; i < tmp.size(); i++)
+		{
+			data[index++] = tmp[i] - '0';
+		}
 	}
 }
 
@@ -240,6 +275,12 @@ BigInt::BigInt(string val)
 	setBigInt(val);
 }
 
+//val of a long long has the potential for up to 19 digits
+BigInt::BigInt(long long val)
+{
+	setBigInt(val);
+}
+
 BigInt::BigInt(const BigInt &other)
 {
 	copy(other);
@@ -247,8 +288,7 @@ BigInt::BigInt(const BigInt &other)
 
 BigInt::~BigInt()
 {
-	delete[] data;
-	data = 0;
+	clear();
 }
 
 void BigInt::setIsPositive(bool b)
@@ -267,9 +307,19 @@ BigInt& BigInt::operator=(const BigInt &other)
 		return *this;
 	else
 	{
+		if (data != 0)
+			clear();
 		copy(other);
 		return *this;
 	}
+}
+
+BigInt& BigInt::operator=(const long long num)
+{
+	if (data != 0)
+		clear();
+	setBigInt(num);
+	return *this;
 }
 
 //modify + operator so that it can add negative numbers to handle cases of subtractions

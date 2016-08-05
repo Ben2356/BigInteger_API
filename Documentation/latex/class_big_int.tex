@@ -7,6 +7,8 @@
 \item 
 \hyperlink{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}{Big\+Int} (string val)
 \item 
+\hyperlink{class_big_int_af2d9aed1aeff8bcb1a1d7a59add76a2c}{Big\+Int} (long long val)
+\item 
 \hyperlink{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}{Big\+Int} (const \hyperlink{class_big_int}{Big\+Int} \&other)
 \item 
 \hyperlink{class_big_int_a2a8ffad37329b0a3649b88180406d12c}{$\sim$\+Big\+Int} ()
@@ -20,6 +22,8 @@ bool \hyperlink{class_big_int_a4e870e916d8b09c0ad62cfa7f2ba8de0}{get\+Is\+Positi
 void \hyperlink{class_big_int_a6bb113748317085a1c8e111fadeec13e}{set\+Is\+Positive} (bool b)
 \item 
 \hyperlink{class_big_int}{Big\+Int} \& \hyperlink{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}{operator=} (const \hyperlink{class_big_int}{Big\+Int} \&other)
+\item 
+\hyperlink{class_big_int}{Big\+Int} \& \hyperlink{class_big_int_aba3cbd0f26009a452359f779742659bb}{operator=} (const long long num)
 \item 
 short \& \hyperlink{class_big_int_acb6c7b1b053887bff5673f9cbd5833a6}{operator\mbox{[}$\,$\mbox{]}} (const short index)
 \item 
@@ -52,7 +56,11 @@ void \hyperlink{class_big_int_a4baef860c6adb34f670a868db7fc4482}{subtract\+One} 
 \item 
 void \hyperlink{class_big_int_a2881bf9fd6f9310cef0853036d89f8a1}{copy} (const \hyperlink{class_big_int}{Big\+Int} \&other)
 \item 
+void \hyperlink{class_big_int_a1509ac3f5654b5b39c5f499b68a094dd}{clear} ()
+\item 
 void \hyperlink{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}{set\+Big\+Int} (string val)
+\item 
+void \hyperlink{class_big_int_a2344433f6a07aa0dec0e2f0b2db811b8}{set\+Big\+Int} (long long val)
 \item 
 void \hyperlink{class_big_int_a4d6ffd94b538c45fa3c4c02e625ba7b7}{resize} ()
 \item 
@@ -163,6 +171,13 @@ default constructor builds a \hyperlink{class_big_int}{Big\+Int} that has a size
 )}\hypertarget{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}{}\label{class_big_int_acebc402885a73f93cc50c0e7c07e0c1e}
 builds a \hyperlink{class_big_int}{Big\+Int} given a string of the number, number can be signed eg) +45, -\/45, or left blank eg) 45 \index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
 \index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{Big\+Int(long long val)}{BigInt(long long val)}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::\+Big\+Int (
+\begin{DoxyParamCaption}
+\item[{long long}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_af2d9aed1aeff8bcb1a1d7a59add76a2c}{}\label{class_big_int_af2d9aed1aeff8bcb1a1d7a59add76a2c}
+creates a \hyperlink{class_big_int}{Big\+Int} from a long long \index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
+\index{Big\+Int@{Big\+Int}!Big\+Int@{Big\+Int}}
 \subsubsection[{\texorpdfstring{Big\+Int(const Big\+Int \&other)}{BigInt(const BigInt &other)}}]{\setlength{\rightskip}{0pt plus 5cm}Big\+Int\+::\+Big\+Int (
 \begin{DoxyParamCaption}
 \item[{const {\bf Big\+Int} \&}]{other}
@@ -185,7 +200,14 @@ destructor for dynamically allocated memory
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a061d5ed012a04d6646c9a6a0e10da544}{}\label{class_big_int_a061d5ed012a04d6646c9a6a0e10da544}
-adds 1 to the \hyperlink{class_big_int}{Big\+Int} directly \index{Big\+Int@{Big\+Int}!copy@{copy}}
+adds 1 to the \hyperlink{class_big_int}{Big\+Int} directly \index{Big\+Int@{Big\+Int}!clear@{clear}}
+\index{clear@{clear}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a1509ac3f5654b5b39c5f499b68a094dd}{}\label{class_big_int_a1509ac3f5654b5b39c5f499b68a094dd}
+deletes dynamically allocated memory and sets data a null pointer \index{Big\+Int@{Big\+Int}!copy@{copy}}
 \index{copy@{copy}!Big\+Int@{Big\+Int}}
 \subsubsection[{\texorpdfstring{copy(const Big\+Int \&other)}{copy(const BigInt &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::copy (
 \begin{DoxyParamCaption}
@@ -276,7 +298,14 @@ postfix operator that subtracts 1 from the \hyperlink{class_big_int}{Big\+Int} \
 \item[{const {\bf Big\+Int} \&}]{other}
 \end{DoxyParamCaption}
 )}\hypertarget{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}{}\label{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}
-overloaded assignment operator \index{Big\+Int@{Big\+Int}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+assignment operator\+: \hyperlink{class_big_int}{Big\+Int} = \hyperlink{class_big_int}{Big\+Int} \index{Big\+Int@{Big\+Int}!operator=@{operator=}}
+\index{operator=@{operator=}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{operator=(const long long num)}{operator=(const long long num)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Big\+Int} \& Big\+Int\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const long long}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{class_big_int_aba3cbd0f26009a452359f779742659bb}{}\label{class_big_int_aba3cbd0f26009a452359f779742659bb}
+assignment operator\+: \hyperlink{class_big_int}{Big\+Int} = long long \index{Big\+Int@{Big\+Int}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Big\+Int@{Big\+Int}}
 \subsubsection[{\texorpdfstring{operator[](const short index)}{operator[](const short index)}}]{\setlength{\rightskip}{0pt plus 5cm}short \& Big\+Int\+::operator\mbox{[}$\,$\mbox{]} (
 \begin{DoxyParamCaption}
@@ -304,7 +333,14 @@ increases the array size by 1 and makes new digit = 1 \index{Big\+Int@{Big\+Int}
 \item[{string}]{val}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}{}\label{class_big_int_a896d3c59d3c4f1e0435d21b2bf50169f}
-performs check on string parameter then creates a \hyperlink{class_big_int}{Big\+Int} with that value; throws invalid\+\_\+argument exception if string is not valid \index{Big\+Int@{Big\+Int}!set\+Is\+Positive@{set\+Is\+Positive}}
+performs check on string parameter then creates a \hyperlink{class_big_int}{Big\+Int} with that value; throws invalid\+\_\+argument exception if string is not valid \index{Big\+Int@{Big\+Int}!set\+Big\+Int@{set\+Big\+Int}}
+\index{set\+Big\+Int@{set\+Big\+Int}!Big\+Int@{Big\+Int}}
+\subsubsection[{\texorpdfstring{set\+Big\+Int(long long val)}{setBigInt(long long val)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::set\+Big\+Int (
+\begin{DoxyParamCaption}
+\item[{long long}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_big_int_a2344433f6a07aa0dec0e2f0b2db811b8}{}\label{class_big_int_a2344433f6a07aa0dec0e2f0b2db811b8}
+overloaded version of set\+Big\+Int that works with long long parameters \index{Big\+Int@{Big\+Int}!set\+Is\+Positive@{set\+Is\+Positive}}
 \index{set\+Is\+Positive@{set\+Is\+Positive}!Big\+Int@{Big\+Int}}
 \subsubsection[{\texorpdfstring{set\+Is\+Positive(bool b)}{setIsPositive(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Big\+Int\+::set\+Is\+Positive (
 \begin{DoxyParamCaption}
@@ -645,5 +681,5 @@ store the sign of the number, 0 will always be positive
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Source Files/bigint.\+h\item 
-D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Source Files/bigint.\+cpp\end{DoxyCompactItemize}
+D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Visual Studio Project/tmp\+\_\+doc\+\_\+gen\+\_\+files/bigint.\+h\item 
+D\+:/\+Users/\+Ben25/\+Documents/\+Git\+Hub/\+Big\+Integer\+\_\+\+A\+P\+I/\+Visual Studio Project/tmp\+\_\+doc\+\_\+gen\+\_\+files/bigint.\+cpp\end{DoxyCompactItemize}
