@@ -226,8 +226,9 @@ bool BigInt::isLarger(const BigInt &b) const
 			if (data[i] > b.data[i])
 				return true;
 			else if (data[i] < b.data[i])
-				return false;
+				break;
 		}
+		return false;
 	}
 	else if (!isPositive && !b.isPositive)
 	{
@@ -236,8 +237,9 @@ bool BigInt::isLarger(const BigInt &b) const
 			if (data[i] < b.data[i])
 				return true;
 			else if (data[i] > b.data[i])
-				return false;
+				break;
 		}
+		return false;
 	}
 	else
 		return false;

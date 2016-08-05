@@ -11,13 +11,6 @@
 #include <stdexcept>
 using namespace std;
 
-/*TODO:
-	- optimization
-	- add ability to reassign a BigInt
-	- add ability to assign an short/int/long to a BigInt on creation
-	- fix potential memory leak with assignment operator
-*/
-
 //new design of BigInt could use traditional unsigned long longs and fill up each letting overflows have new unsigned long
 //longs and storing all the overflows in a vector/array => would allow for the system to handle numbers more "natively"
 
